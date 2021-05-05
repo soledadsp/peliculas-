@@ -1,0 +1,608 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+body{
+	background: #03090F;
+}
+
+nav{
+	width: 100%;
+	height: 50px;
+	position: relative;
+	margin-top: 20px;
+}
+
+.casilla{
+	width: 50%;
+	grid-template-columns: repeat(3, 1fr);
+ 	gap: 0px;
+ 	display: grid;
+ 	margin: -50px 0px 0px 250px;
+}
+
+.logo{
+	width: 40px;
+	margin-left: 10px;
+}
+
+.titulo{
+	color: white;
+	font-family: Bahnschrift;
+	font-weight: bold;
+	font-size: 20px;
+	margin: -35px 0px 0px 60px; 
+
+}
+
+ul {
+	display: flex;
+	list-style: none;
+	flex: 1;
+	margin-left: 20px;
+	padding: 10px;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+.nav-menu li a{
+  background: rgba(0, 0, 0, 0);
+  color: #777777;
+  text-decoration: none; 
+  padding: 5px 20px 20px;
+  display: block;
+  position: relative;
+  top: 0px;
+  font-size: 17px;
+  cursor: context-menu;
+}
+
+.a{
+	font-size: 30px;
+	font-family: Bahnschrift;
+}
+
+/* al pasar el cursos color  */
+
+.nav-menu li a:hover{
+  background-color: #EDEDED;
+  color:black;
+
+}
+
+/* terminar al cursor  */
+.nav-menu>li{
+  position: relative;
+  float: center;
+  top:10px;
+}
+
+/* submenu */
+.nav-menu li ul{
+	display: none;
+  position: relative;
+  width: 90px;
+  height: 178px;
+  background: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+.nav-menu li:hover >ul{
+  display: block;
+  position: relative;
+}
+
+.nos:hover{
+	background: red;
+}
+
+.nav-menu .li .a:hover {
+  border-bottom: 2px solid yellow;
+}
+
+.menu-btn{
+	display: none;
+}
+/*---------------------------------------*/
+
+.section-1{
+	width: 100%;
+}
+
+.panda-inicio{
+	width: 70%;
+	margin: 50px 0px 0px 250px;
+	border-radius: 20px;
+}
+
+/*.difu{
+	width: 100%;
+	height: 636px;
+	border-radius: 20px;
+	box-shadow:inset 500px 0px 200px 0px rgba(19,28,36);
+	margin: -640px 0px 0px 0px;
+	background: rgba(0,0,0,0.2);
+	position: relative;
+}*/
+
+.panda{
+	width: 100%;
+	border-radius: 20px;
+}
+
+.nose{
+	color: white;
+	display: none;
+}
+
+/*--------------------------------------------------*/
+
+.ultimas{
+	color: white;
+	font-family: Bahnschrift;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 80px 0px 0px 50px;
+}
+
+.carelera{
+	width: 90%;
+	grid-template-columns: repeat(5, 4fr);
+ 	gap: 0px;
+ 	display: grid;
+ 	margin: 50px 0px 0px 80px;
+}
+
+.article{
+	width: 80%;
+	grid-template-columns: repeat(1, 1fr);
+ 	gap: 0px;
+ 	display: grid;
+ 	color: white;
+}
+
+.panda-car{
+	width: 100%;
+	border-radius: 10px;
+}
+
+/*--------------------------------*/
+
+.actores-tex{
+	color: white;
+	font-family: Bahnschrift;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 80px 0px 0px 50px;
+}
+
+.actores{
+	width: 90%;
+	margin: 30px 0px 0px 80px;
+}
+
+.article-actores{
+	width: 100%;
+	grid-template-columns: repeat(11, 1fr);
+ 	gap: 0px;
+ 	display: grid;
+}
+
+.img-actor{
+	width: 80%;
+}
+
+/*-----------------------------------------------*/
+.footer{
+	width: 70%;
+	height: 250px;
+	background: #131C24;
+	margin-left: 250px;
+	margin-top: 80px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.fot-titul{
+	color:white;
+	padding: 50px 0px 0px 70px;
+	font-family: Bahnschrift;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+.fot-parra{
+	color:white;
+	padding: 10px 70px 0px 70px;
+	font-family: Bahnschrift;
+	font-size: 20px;
+}
+
+@media (max-width: 850px){
+
+
+	.panda-inicio{
+		width: 70%;
+		margin: 50px 0px 0px 150px;
+		border-radius: 20px;
+	}
+
+	.carelera{
+		width: 90%;
+		grid-template-columns: repeat(3, 1fr);
+	 	gap: 0px;
+	 	display: grid;
+	 	margin: 50px 0px 0px 20px;
+	}
+
+	.panda-car{
+	width: 100%;
+	border-radius: 5px;
+	}
+
+	.article{
+	width: 80%;
+	grid-template-columns: repeat(1, 1fr);
+ 	gap: 0px;
+ 	display: grid;
+ 	color: white;
+ 	margin: 0;
+}
+
+.ultimas{
+	color: white;
+	font-family: Bahnschrift;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 80px 0px 0px 50px;
+}
+
+	.actores{
+		width: 80%;
+		margin: 30px 0px 0px 80px;
+	}
+
+	.article-actores{
+	width: 90%;
+	grid-template-columns: repeat(6, 1fr);
+ 	gap: 0px;
+ 	display: grid;
+}
+
+	.footer{
+		width: 80%;
+		height: 350px;
+		background: #131C24;
+		margin-left: 80px;
+		margin-top: 80px;
+		border-radius: 10px 10px 0px 0px;
+	}
+
+	nav{
+		width: 90%;
+		height: 50px;
+		position: relative;
+		margin-top: 20px;
+	}
+
+	
+
+	.casilla{
+	width: 50%;
+	grid-template-columns: repeat(3, 1fr);
+ 	gap: 0px;
+ 	display: grid;
+ 	margin: -50px 0px 0px 200px;
+}
+}
+
+@media (max-width: 680px){
+
+	.panda-inicio{
+		width: 100%;
+		margin: 50px 0px 0px 0px;
+		border-radius: 20px;
+	}
+
+	.carelera{
+		width: 90%;
+		grid-template-columns: repeat(3, 1fr);
+	 	gap: 0px;
+	 	display: grid;
+	 	margin: 50px 0px 0px 20px;
+	}
+
+	.panda-car{
+	width: 100%;
+	border-radius: 5px;
+	}
+
+	.article{
+	width: 80%;
+	grid-template-columns: repeat(1, 1fr);
+ 	gap: 0px;
+ 	display: grid;
+ 	color: white;
+ 	margin: 0;
+}
+
+.ultimas{
+	color: white;
+	font-family: Bahnschrift;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 80px 0px 0px 50px;
+}
+
+	.actores{
+		width: 80%;
+		margin: 30px 0px 0px 80px;
+	}
+
+	.article-actores{
+	width: 90%;
+	grid-template-columns: repeat(6, 1fr);
+ 	gap: 0px;
+ 	display: grid;
+}
+
+	.footer{
+		width: 80%;
+		height: 350px;
+		background: #131C24;
+		margin-left: 80px;
+		margin-top: 80px;
+		border-radius: 10px 10px 0px 0px;
+	}
+
+	nav{
+		display: none;
+	}
+}
+
+@media (max-width: 630px){
+
+	.panda-inicio{
+		width: 100%;
+		margin: 50px 0px 0px 0px;
+		border-radius: 20px;
+	}
+
+	.carelera{
+		width: 90%;
+		grid-template-columns: repeat(3, 1fr);
+	 	gap: 0px;
+	 	display: grid;
+	 	margin: 50px 0px 0px 20px;
+	}
+
+	.panda-car{
+	width: 100%;
+	border-radius: 5px;
+	}
+
+	.article{
+	width: 80%;
+	grid-template-columns: repeat(1, 1fr);
+ 	gap: 0px;
+ 	display: grid;
+ 	color: white;
+ 	margin: 0;
+}
+
+.ultimas{
+	color: white;
+	font-family: Bahnschrift;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 80px 0px 0px 50px;
+}
+
+	.actores{
+		width: 80%;
+		margin: 30px 0px 0px 80px;
+	}
+
+	.article-actores{
+	width: 90%;
+	grid-template-columns: repeat(6, 1fr);
+ 	gap: 0px;
+ 	display: grid;
+}
+
+	.footer{
+		width: 80%;
+		height: 260px;
+		background: #131C24;
+		margin-left: 80px;
+		margin-top: 80px;
+		border-radius: 10px 10px 0px 0px;
+	}
+
+	nav{
+		display: none;
+	}
+
+	.fot-titul{
+	color:white;
+	font-family: Bahnschrift;
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.fot-parra{
+	color:white;
+	font-family: Bahnschrift;
+	font-size: 13px;
+}
+}
+
+@media (max-width: 500px){
+
+	.panda-inicio{
+		width: 100%;
+		margin: 50px 0px 0px 0px;
+		border-radius: 20px;
+	}
+
+	.carelera{
+		width: 90%;
+		grid-template-columns: repeat(3, 1fr);
+	 	gap: 0px;
+	 	display: grid;
+	 	margin: 50px 0px 0px 20px;
+	}
+
+	.panda-car{
+	width: 100%;
+	border-radius: 5px;
+	}
+
+	.article{
+	width: 80%;
+	grid-template-columns: repeat(1, 1fr);
+ 	gap: 0px;
+ 	display: grid;
+ 	color: white;
+ 	margin: 0;
+}
+
+.ultimas{
+	color: white;
+	font-family: Bahnschrift;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 80px 0px 0px 50px;
+}
+
+	.actores{
+		width: 80%;
+		margin: 30px 0px 0px 80px;
+	}
+
+	.article-actores{
+	width: 90%;
+	grid-template-columns: repeat(6, 1fr);
+ 	gap: 0px;
+ 	display: grid;
+}
+
+	.footer{
+		width: 100%;
+		height: 200px;
+		background: #131C24;
+		margin-top: 80px;
+		margin-left: 0px
+	}
+
+	h3{
+		font-size: 15px;
+	}
+
+
+	nav{
+		display: none;
+	}
+
+
+.fot-titul{
+	color:white;
+	font-family: Bahnschrift;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.fot-parra{
+	color:white;
+	font-family: Bahnschrift;
+	font-size: 10px;
+}
+}
+
+
+
+
+@media (max-width: 400px){
+
+	.panda-inicio{
+		width: 100%;
+		margin: 50px 0px 0px 0px;
+		border-radius: 20px;
+	}
+
+	.carelera{
+		width: 90%;
+		grid-template-columns: repeat(3, 1fr);
+	 	gap: 0px;
+	 	display: grid;
+	 	margin: 50px 0px 0px 20px;
+	}
+
+	.panda-car{
+	width: 100%;
+	border-radius: 5px;
+	}
+
+	.article{
+	width: 80%;
+	grid-template-columns: repeat(1, 1fr);
+ 	gap: 0px;
+ 	display: grid;
+ 	color: white;
+ 	margin: 0;
+}
+
+.ultimas{
+	color: white;
+	font-family: Bahnschrift;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 80px 0px 0px 50px;
+}
+
+	.actores{
+		width: 80%;
+		margin: 30px 0px 0px 80px;
+	}
+
+	.article-actores{
+	width: 90%;
+	grid-template-columns: repeat(6, 1fr);
+ 	gap: 0px;
+ 	display: grid;
+}
+
+	.footer{
+		width: 100%;
+		height: 200px;
+		background: #131C24;
+		margin-top: 80px;
+		margin-left: 0px
+	}
+
+	h3{
+		font-size: 15px;
+	}
+
+
+	nav{
+		display: none;
+	}
+
+
+.fot-titul{
+	color:white;
+	font-family: Bahnschrift;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.fot-parra{
+	color:white;
+	font-family: Bahnschrift;
+	font-size: 10px;
+}
+}
