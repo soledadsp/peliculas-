@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>boleta</title>
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<img class="fondo" src="fm2.svg" alt="">
+	<section class="section-inicio">
+		<article>
+		<article>--<img class="logo" src="" alt="">
+			<aside><h1>BOLETA DE NOTA</h1></aside>
+		</article>
+
+		<article class="personal">
+			<div class="text div-1">
+				<h3 class="h3-text">CODICO</h3>
+				<input class="caja-1" type="text" placeholder="Inserte Código">
+			</div>
+			<div class="text div-2">
+				<h3 class="h3-text">NOMBRE</h3>
+				<input class="caja cajita-2" type="text" placeholder="Inserte Nombre">
+			</div>
+			<div class="text div-2">
+				<h3 class="h3-text">APELLIDO</h3>
+				<input class="caja cajita-3" type="text" placeholder="Inserte Apellido">
+			</div>
+			<div class="text div-2">
+				<h3 class="h3-text">DIRECCIÒN</h3>
+				<input id="direccion" class="caja cajita-4" type="text" placeholder="Inserte Dirección">
+			</div>
+			<div class="text div-2">
+				<h3 class="h3-text">BASICO</h3>
+				<input id="basico" class="caja cajita-5" type="text" placeholder="Inserte Basico">
+			</div>
+			<input class="caja-foto" type="text" name="">
+			<input class="text-boton" type="button" value="Abrir">
+		</article>
+	</section>
+	<section class="section-2">
+		<article class="nosenose">
+			<div class="hol-1">
+				<h1 class="civil">PxEst_CIVIL</h1>
+				<p class="p-raio">
+					<input id="casado" class="radio" type="radio" name="casado" value="casado" onclick="calcular()"> Casado  -5%<br>
+					<input id="divorciado" class="radio" type="radio" name="casado" value="divorciado" onclick="calcular()"> Divorciado  -3%<br>
+					<input id="viudo" class="radio" type="radio" name="casado" value="viudo" onclick="calcular()"> Viudo  -2%<br>
+					<input id="soltero" class="radio" type="radio" name="casado" value="soltero" onclick="calcular()"> Soltero  -1%
+					<input id="rpacivil" class="text-caja" type="text" name="ddd" placeholder="Resultado">
+				</p>
+			</div>
+			<div class="hol-1">
+				<h1 class="civil">PxNro_HIJOS</h1>
+				<p class="p-raio">
+					<input id="hijo1" class="radio" type="radio" name="hijos" value="hijo1" onclick="calcular()"> 1 a 2     -5%<br>
+					<input id="hijo3" class="radio" type="radio" name="hijos" value="hijo3" onclick="calcular()"> 3 a 4     -6%<br>
+					<input id="hijo5" class="radio" type="radio" name="hijos" value="hijo5" onclick="calcular()"> 5 a mas     -7%
+					<input id="rpahijo" class="text-caja-1" type="text" name="ddd" placeholder="Resultado">
+				</p>
+			</div>
+			<div class="hol-1">
+				<h1 class="civil">DESCUENTOS</h1>
+				<p class="p-raio chek-1">
+					<input class="chek" type="checkbox" id="cbox1" value="first_checkbox" onclick="calcular()"> SNP    -13%<br>
+					<input class="chek" type="checkbox" id="cbox2" value="first_checkbox" onclick="calcular()"> Essalud    -6%
+					<input id="descuento" class="text-caja-2" type="text" name="ddd" placeholder="Resultado">
+				</p>
+			</div>
+		</article>
+	</section>
+	<div class="hol-2">
+		<p class="p-raio chek-2">
+			<h1 class="text-neto">NETO A PAGAR </h1>
+			<input id="neto" class="caja-neto text-caja-2" type="text" placeholder="Resultado">
+			<input class="text-boton boton-guardar" type="button" value="Guardar">
+			<input class="text-boton boton-modificar" type="button" value="Modificar">
+			<input class="text-boton boton-eliminar" type="button" value="Eliminar">
+		</p>
+	</div>
+	<div class="table-inicio">
+		<table>
+			<thead>
+				<tr>
+					<th>Codigo</th>
+					<th>Nombre</th>
+					<th>Dirección</th>
+					<th>Basico</th>
+					<th>PxEs_Civil</th>
+					<th>PxNr_Hijos</th>
+					<th>Descuento</th>
+					<th>Neto Pagar</th>
+				</tr>
+			</thead>
+				<tr>
+					<td></td> <!--CODIGO-->
+					<td></td> <!--NOMBRE-->
+					<td></td> <!--DIRECCIÒN-->
+					<td></td> <!--BASICO-->
+					<td></td> <!--PXES_CIVIL-->
+					<td></td> <!--PXNR_HIJOS-->
+					<td></td> <!--DESCUENTOS-->
+					<td></td> <!--NETO A PAGAR-->
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+		</table>
+	</div>
+	<script type="text/javascript" src="java.js"></script>
+</body>
+</html>
